@@ -1,0 +1,123 @@
+@import url(./reset.css);
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: #333;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 450px;
+  color: white;
+  position: relative;
+  padding: 20px;
+}
+
+.header::before {
+  content: "";
+  background-image: url("./../img/header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* inset: 0;   */
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header-text {
+  font-size: 1.1rem;
+  max-width: 820px;
+}
+
+.title,
+.header-text {
+  margin-bottom: 20px;
+}
+
+.link {
+  border: 1px solid gray;
+  display: inline-block;
+  padding: 15px 30px;
+  background: #333;
+  text-decoration: none;
+  border-radius: 1px;
+  text-transform: capitalize;
+  max-width: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: white;
+}
+
+.link:hover {
+  background: white;
+  color: #333;
+}
+
+.overflow-protection {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.section {
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.text-columns {
+  columns: 2 7rem;
+  column-gap: 1.9rem;
+  margin: 0 auto;
+  max-width: 800px;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  font-weight: bold;
+  display: block;
+  font-size: 1.5em;
+  padding: 1em 0;
+}
+
+.work-section {
+
+}
+
+.img {
+
+}
+
+.hiden-title {
+  
+}
